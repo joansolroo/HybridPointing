@@ -1,0 +1,333 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\inria\vvvv\projects\HybridPointing\Wiimote.v4p" systemname="Wiimote" filename="C:\inria\vvvv\projects\HybridPointing\Wiimote.v4p" scrollx="0" scrolly="0">
+   <NODE componentmode="InAWindow" id="0" nodename=":PLUGINS:\WiiMotePlugin.dll" systemname="WiiMote (Devices)" filename="%VVVV%\addonpack\lib\nodes\plugins\WiiMotePlugin.dll">
+   <BOUNDS height="264" left="3396" top="3924" type="Node" width="8772">
+   </BOUNDS>
+   <BOUNDS left="3396" top="3924" type="Box">
+   </BOUNDS>
+   <PIN pinname="LED" visible="1">
+   </PIN>
+   <PIN pinname="Enable" visible="1">
+   </PIN>
+   <PIN pinname="Rumble" visible="1">
+   </PIN>
+   <PIN pinname="LEDXYZW" visible="1">
+   </PIN>
+   <PIN pinname="CalibrationXYZ" pintype="Input" visible="1">
+   </PIN>
+   <PIN pinname="AccellerationXYZ" visible="1">
+   </PIN>
+   <PIN pinname="PositionXY" visible="1">
+   </PIN>
+   <PIN pinname="ExtensionFound" visible="1">
+   </PIN>
+   <PIN pinname="Working" visible="1">
+   </PIN>
+   <PIN pinname="CursorXYZW" visible="1">
+   </PIN>
+   <PIN pinname="ButtonsXYZW" visible="1">
+   </PIN>
+   <PIN pinname="SystemXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Battery" visible="1">
+   </PIN>
+   <PIN pinname="InfraredXYZ" visible="1">
+   </PIN>
+   <PIN pinname="InfraredMode" visible="1">
+   </PIN>
+   <PIN pinname="CalibrationZeroGXYZ" pintype="Input" slicecount="1" visible="-1" values="126">
+   </PIN>
+   <PIN pinname="CalibrationOneGXYZ" pintype="Input" slicecount="1" visible="-1" values="151">
+   </PIN>
+   <PIN pinname="CalibrateNow!" pintype="Input" slicecount="1" visible="-1" values="0">
+   </PIN>
+   <PIN pinname="WiimoteID" pintype="Input" slicecount="1" visible="-1" values="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Available Wiimotes" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="InfraredXYZW" visible="1">
+   </PIN>
+   <PIN pinname="Extension Found" visible="1">
+   </PIN>
+   <PIN pinname="AngleXY" visible="1">
+   </PIN>
+   <PIN pinname="Infrared Mode" visible="1">
+   </PIN>
+   <PIN pinname="AccelerationXYZ" visible="1">
+   </PIN>
+   <PIN pinname="AngleXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Infrared XYSize" visible="1">
+   </PIN>
+   <PIN pinname="Angle PitchRollYaw" visible="1">
+   </PIN>
+   <PIN pinname="System PlusMinusHome" visible="1">
+   </PIN>
+   <PIN pinname="Buttons AB12" visible="1">
+   </PIN>
+   <PIN pinname="Cursor UpDownLeftRight" visible="1">
+   </PIN>
+   <PIN pinname="LED 0123" visible="1">
+   </PIN>
+   <PIN pinname="Force Reset" visible="1" pintype="Input">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="1" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="4842" top="1500" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="11436" top="5280" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="1788" left="4842" top="1500" type="Box" width="780">
+   </BOUNDS>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Background" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Connections" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="4" values="0,0,0,0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" values="0,0,0,0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="LED">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="2" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="7041" top="1500" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="12228" top="5904" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="1788" left="7041" top="1500" type="Box" width="780">
+   </BOUNDS>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Rumble">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="3" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="2736" top="2856" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="12468" top="6144" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="804" left="2736" top="2856" type="Box" width="732">
+   </BOUNDS>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Enable">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="4" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="0" left="1500" top="5028" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="8556" top="7380" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="1248" left="1500" top="5028" type="Box" width="1956">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Status">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="5" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Node" left="8634" top="3024" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8634" top="3024" width="1410" height="495">
+   </BOUNDS>
+   <BOUNDS type="Window" left="11580" top="4560" width="215" height="160">
+   </BOUNDS>
+   <PIN pinname="Output Enum" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Infrared Mode|">
+   </PIN>
+   <PIN pinname="Input Enum" slicecount="1" values="Off">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBOX (VALUE ADVANCED)" componentmode="InABox" id="6" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="11697" top="2139" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11697" top="2139" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Window" left="11880" top="3570" width="215" height="160">
+   </BOUNDS>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Force Reset|">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="7" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="7032" top="6612" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="12708" top="6384" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="648" left="7032" top="6612" type="Box" width="1140">
+   </BOUNDS>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="4" values="0,0,0,0">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="4" values="0,0,0,0">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Pages" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="ControlButtons">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4764" top="8160" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4764" top="8160" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" values="0,0,0,0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Button 1|">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5760" top="8724" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5760" top="8724" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="12" values="0,0,0,0,0,0,0,0,0,0,0,0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Button 2|">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (Spreads)" filename="" nodename="GetSlice (Spreads)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="4776" top="7452" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Select" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="4" values="0,0,0,0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (Spreads)" filename="" nodename="GetSlice (Spreads)" componentmode="Hidden" id="11">
+   <BOUNDS type="Node" left="5916" top="7728" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Select" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="4" values="0,0,0,0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="4" dstpinname="Input String" linkstyle="VHV" srcnodeid="0" srcpinname="Working">
+   <LINKPOINT x="3420" y="4608">
+   </LINKPOINT>
+   <LINKPOINT x="3420" y="4608">
+   </LINKPOINT>
+   </LINK>
+   <LINK dstnodeid="0" dstpinname="Enable" srcnodeid="3" srcpinname="Y Output Value">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="0" dstpinname="LED 0123">
+   </LINK>
+   <LINK dstnodeid="0" dstpinname="Rumble" srcnodeid="2" srcpinname="Y Output Value">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output Enum" dstnodeid="0" dstpinname="Infrared Mode">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Force Reset">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="8" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Output" dstnodeid="9" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Buttons AB12" dstnodeid="7" dstpinname="Y Input Value">
+   </LINK>
+   <BOUNDS type="Window" left="-1" top="-1" width="13668" height="10224">
+   </BOUNDS>
+   <PACK Name="image" Version="0.2.0">
+   </PACK>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
+   </PATCH>

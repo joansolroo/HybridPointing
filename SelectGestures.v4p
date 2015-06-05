@@ -1,0 +1,107 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\inria\vvvv\projects\HybridPointing\SelectGestures.v4p" systemname="SelectGestures" filename="C:\inria\vvvv\projects\HybridPointing\SelectGestures.v4p">
+   <NODE systemname="Gesture (Leap)" filename="%VVVV%\packs\leappack\nodes\plugins\x64\LeapDevices.dll" nodename="Gesture (Leap)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="1944" top="2580" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Gestures" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="ID" visible="1">
+   </PIN>
+   <PIN pinname="Pointables" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Select (Node)" filename="%VVVV%\lib\nodes\modules\Node\Select (Node).v4p" nodename="Select (Node)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="1500" top="4344" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Select" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="1716" top="3912" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Pointable (Leap)" filename="%VVVV%\packs\leappack\nodes\plugins\x64\LeapDevices.dll" nodename="Pointable (Leap)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="1944" top="3264" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Pointables" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tip PositionXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Stabilized Tip PositionXYZ" visible="1">
+   </PIN>
+   <PIN pinname="ID" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="4" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="1500" top="2016" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="2016" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Gestures">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="5" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1728" top="1500" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1728" top="1500" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Pointable ID|">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="6" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="1512" top="4980" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1512" top="4980" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Pointable&apos;s Gestures|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Output Node" dstnodeid="1" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="1" dstpinname="Select" linkstyle="VHV">
+   <LINKPOINT x="1776" y="4266">
+   </LINKPOINT>
+   <LINKPOINT x="2184" y="4266">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="6" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="ID" dstnodeid="2" dstpinname="Input 2" linkstyle="VHV">
+   <LINKPOINT x="3432" y="3720">
+   </LINKPOINT>
+   <LINKPOINT x="1980" y="3720">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Output Node" dstnodeid="0" dstpinname="Gestures" linkstyle="VHV">
+   <LINKPOINT x="1560" y="2424">
+   </LINKPOINT>
+   <LINKPOINT x="1944" y="2424">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Pointables" dstnodeid="3" dstpinname="Pointables">
+   </LINK>
+   <BOUNDS type="Window" left="15120" top="6720" width="3540" height="6480">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
+   </PATCH>
